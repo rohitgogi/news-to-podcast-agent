@@ -5,39 +5,140 @@ Back in middle school, our teachers made us watch CNN 10 every morning because i
 
 So I built this: an automated pipeline that collects daily U.S. and tech/AI news, summarizes it into a short script, converts it into a podcast, and emails me the MP3 every morning.
 
+## Features & Challenges
+
+### What It Does
+This project automatically builds and delivers a daily AI-generated podcast based on the latest U.S. and tech/AI news.  
+Every morning it:
+1. Pulls live news from trusted RSS feeds (CNN, NPR, Wired, The Verge, BBC, etc.)
+2. Embeds and stores them in a vector database for semantic search
+3. Generates a summarized, conversational script using GPT-4o-mini
+4. Converts that script to natural speech using OpenAI TTS
+5. Emails me the MP3 directly through Gmail
+6. Repeats the whole process automatically every day through GitHub Actions
+
+It’s basically an AI pipeline that takes the internet’s chaos and turns it into a 5-minute personal audio briefing.
+
 ---
 
-## Project Plan
+### Personalization & Intelligence
+I later extended the base project to make it smarter:
+- **User Personalization:**  
+  Added simple topic-filtering through the FastAPI layer (e.g. `?topic=technology` or `?topic=business`), so i can generate focused episodes.
+- **Story Clustering:**  
+  Used sentence embeddings + cosine similarity (via scikit-learn) to group related articles into unified topics. This prevents the model from summarizing the same story twice under different headlines.
+- **Semantic Retrieval:**  
+  Each day’s articles are semantically indexed — not just stored by keyword — allowing the LLM to reason over contextually similar stories.
+- **Embedding Caching:**  
+  Built an MD5-based cache using `hashlib` so repeated embeddings aren’t recomputed, cutting API calls and latency.
+- **API Access:**  
+  Built a FastAPI wrapper (`/generate`) so I can trigger the pipeline from a browser or mobile shortcut.
+- **Automation:**  
+  GitHub Actions runs the full pipeline every morning — ingestion, reasoning, speech, and email — with no manual steps.
 
-### 1. Problem
-I wanted a single, low-effort way to stay updated — like a personal version of CNN 10, but powered by AI.
+---
 
-### 2. Pipeline
+### Stack
+| Layer | Tool / Library | Why |
+|-------|----------------|-----|
+| Ingestion | `feedparser`, RSS | Reliable, structured, no scraping |
+| Storage | `ChromaDB` | Lightweight, local vector DB |
+| Embeddings | `text-embedding-3-small` (OpenAI) | Fast + inexpensive |
+| Summarization | `gpt-4o-mini` | Coherent short-form writing |
+| Speech | `OpenAI TTS` | High-quality voices with one API client |
+| Personalization | `FastAPI` | Simple REST control layer |
+| Clustering | `scikit-learn`, `cosine_similarity` | Topic grouping |
+| Caching | `hashlib`, JSON | Reduces API costs |
+| Delivery | `smtplib` + Gmail App Password | Direct MP3 email |
+| Automation | `GitHub Actions` | Fully hands-off daily scheduling |
+
+---
+
+### Key Challenges
+**1. Embedding Mismatch**  
+Originally, ingestion used OpenAI embeddings and reasoning used SentenceTransformer (`384-dim`).  
+This caused a dimensionality error (`got 384 expected 1536`).  
+Solved by aligning both to OpenAI embeddings for consistency.
+
+**2. RSS Feed Reliability**  
+Some feeds returned zero items or invalid XML.  
+Added per-feed logging and fallback sources to keep ingestion consistent.
+
+**3. Rate Limits & Cost Control**  
+Hit OpenAI quota limits during early testing.  
+Introduced caching and `limit_per_feed` caps to balance cost vs coverage.
+
+**4. Deployment on GitHub Actions**  
+Secrets (.env) aren’t automatically passed to Actions.  
+Fixed by configuring repository secrets and loading them explicitly via workflow `env:` mapping.
+
+**5. Gmail Rejections from Cloud IPs**  
+Gmail flagged some Actions as suspicious.  
+Handled by switching to App Passwords and reducing attachment frequency.
+
+---
+
+### Current Capabilities
+- End-to-end automation: from ingestion to delivery  
+- Clean FastAPI interface (`/generate?minutes=5&topic=tech`)  
+- Automatic clustering and topic summarization  
+- Personalized daily podcast emailed as MP3  
+- Fully reproducible, one-click GitHub Action  
+- Extensible architecture for dashboards, multi-voice TTS, and custom feeds
+
+---
+
+### Next Steps
+- Integrate a lightweight front-end dashboard for playback and history  
+- Add voice selection and tone controls for TTS  
+- Expand to global news with language-specific models  
+- Store listener preferences in SQLite or Supabase for long-term personalization  
+
+
+## Original Project Plan
+
+### 1. The Goal
+I wanted to be able to stay updated on daily news without having to scroll through hundreds of articles or subscribe to ten different newsletters.  
+Something short, relevant, and digestible — like *CNN 10* for adults.  
+So the goal was simple: take the chaos of online news, clean it up, and turn it into something I could just listen to every morning.
+
+### 2. The Concept
+The full system runs in five stages:
 ```
 Ingest → Reason → Speak → Deliver → Repeat
 ```
 
-### 3. Ingest
-- Used **RSS feeds** (via `feedparser`) to pull articles from verified U.S. and tech sources.
-- This avoids scraping and keeps the data structured.
+Each stage handles one part of the process — from collecting raw data to producing a finished podcast episode.
 
-### 4. Store & Query
-- Stored articles in a **Chroma** vector database.
-- Used **OpenAI embeddings** for semantic search and retrieval.
+### 3. Ingest
+First, I had to figure out how to pull fresh news automatically.  
+I found **RSS (Really Simple Syndication)** feeds — structured web data that updates as news outlets post new stories.  
+With Python’s `feedparser`, I can easily collect articles from major U.S. and tech/AI sources without scraping HTML or dealing with paywalls.
+
+### 4. Store
+Next, I needed a way to store and query that data efficiently.  
+I used **Chroma**, a lightweight vector database, because it’s simple and fast enough for this scope.  
+Articles are embedded using **OpenAI’s text-embedding-3-small** model so I can later retrieve them semantically rather than by keywords.
 
 ### 5. Reason
-- Queried the DB for relevant stories (U.S., local, and AI/tech).
-- Generated a coherent, conversational script using **GPT-4o-mini**.
+Once the data is in, the project uses **GPT-4o-mini** to summarize the latest and most relevant stories into a short, coherent script — something you’d actually want to listen to.  
+I kept the temperature low to prioritize accuracy and factual tone.
 
 ### 6. Speak
-- Converted the script into natural speech using **OpenAI TTS**.
-- Output: a clean, listenable MP3.
+Then comes text-to-speech.  
+Using **OpenAI TTS**, the script is turned into a clear, human-sounding MP3 — kind of like a radio segment.
 
 ### 7. Deliver
-- Sent the MP3 automatically through **Gmail SMTP**.
+After the audio is generated, it’s automatically emailed to me through **Gmail SMTP**.  
+It’s just a short daily podcast sitting in my inbox, ready to play on my commute.
 
-### 8. Automate
-- Set up **GitHub Actions** to run the full pipeline daily.
+### 8. Repeat
+Finally, the whole pipeline runs every morning using **GitHub Actions**, so it’s fully automated — no manual work needed.
+
+### 9. Why This Tech Stack
+I went with OpenAI for everything (embeddings, LLM, TTS) to keep the architecture clean — one API client, consistent models, and fewer points of failure.  
+And GitHub Actions made sense for scheduling since I was hosting the repo there anyway.
+
 
 ---
 
