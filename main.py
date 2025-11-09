@@ -4,7 +4,7 @@ from datetime import datetime
 
 from app.ingest import ingest_articles
 from app.reason import generate_podcast_script
-from app.speak import text_to_speech
+from app.speak import text_to_speech, send_email
 
 load_dotenv()
 
@@ -25,7 +25,10 @@ def main():
     print("→ Script generated successfully.\n")
 
     print("Step 3: Generating audio file...")
-    text_to_speech(script)
+    file_path = text_to_speech(script)  # capture the returned path
+
+    print("Step 4: Sending email...")
+    send_email(file_path)
 
     print("\nAll steps complete. Podcast saved in ./output/")
 

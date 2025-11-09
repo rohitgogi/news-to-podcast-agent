@@ -16,7 +16,10 @@ def root():
     return {"message": "Welcome to the News-to-Podcast API"}
 
 @app.get("/generate")
-def generate_podcast(minutes: int = Query(5, ge=1, le=15)):
+def generate_podcast(
+    minutes: int = Query(5, ge=1, le=15),
+    topic: str = Query("general", description="Focus area, e.g. technology or politics")
+):
     """Run full pipeline: ingest → summarize → synthesize."""
     try:
         article_count = ingest_articles(limit_per_feed=10)
@@ -25,7 +28,7 @@ def generate_podcast(minutes: int = Query(5, ge=1, le=15)):
                 {"error": "No articles found"}, status_code=404
             )
 
-        script = generate_podcast_script(max_minutes=minutes)
+        script = generate_podcast_script(max_minutes=minutes, topic=topic)
         file_path = text_to_speech(script)
 
         return FileResponse(

@@ -3,6 +3,11 @@ from datetime import datetime
 from dotenv import load_dotenv
 from openai import OpenAI
 from app.reason import generate_podcast_script
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.base import MIMEBase
+from email import encoders
 
 load_dotenv()
 
@@ -22,7 +27,37 @@ def text_to_speech(text: str):
         response.stream_to_file(out_path)
 
     print(f"Podcast saved to {out_path}")
+    return out_path
 
+def send_email(file_path: str):
+    EMAIL_USER = os.getenv("EMAIL_USER")
+    EMAIL_PASS = os.getenv("EMAIL_PASS")
+    RECIPIENT_EMAIL = os.getenv("RECIPIENT_EMAIL")
+
+    print(f"Attempting to send email from {EMAIL_USER} to {RECIPIENT_EMAIL}")
+
+    msg = MIMEMultipart()
+    msg["From"] = EMAIL_USER
+    msg["To"] = RECIPIENT_EMAIL
+    msg["Subject"] = "Your Daily News Podcast"
+
+    body = "Here's your automatically generated news podcast for today."
+    msg.attach(MIMEText(body, "plain"))
+
+    with open(file_path, "rb") as attachment:
+        part = MIMEBase("application", "octet-stream")
+        part.set_payload(attachment.read())
+        encoders.encode_base64(part)
+        part.add_header("Content-Disposition", f"attachment; filename={os.path.basename(file_path)}")
+        msg.attach(part)
+
+    with smtplib.SMTP("smtp.gmail.com", 587) as server:
+        server.starttls()
+        server.login(EMAIL_USER, EMAIL_PASS)
+        server.send_message(msg)
+
+    print("Email sent successfully!")
+    
 if __name__ == "__main__":
     print("Step 1: Loading collection...")
     script = generate_podcast_script(max_minutes=5)
