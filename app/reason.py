@@ -39,14 +39,14 @@ def summarize_article(title, content):
     return response.choices[0].message.content.strip()
 
 
-def generate_podcast_script(max_minutes: int = 5) -> str:
+def generate_podcast_script(max_minutes: int = 5, topic: str = "general"):
     """Query the vector DB for today's articles and create a spoken script."""
 
     # chroma searches using semantic phrases so we can just speak to it what we want basically
-    query = "Top local Atlanta, Georgia news from the last day, plus major national AND AI tech stories if relevant."
+    query = f"Top {topic} news from the last day, including major national and AI tech stories if relevant."
 
     print("Step 2: Querying Chroma...")
-    result = collection.query(query_texts=[query], n_results=15)
+    result = collection.query(query_texts=[query], n_results=30)
     print("Step 2 complete.")
 
     docs = result["documents"][0]
@@ -104,6 +104,22 @@ def generate_podcast_script(max_minutes: int = 5) -> str:
 
     print("Step 3: Summarizing individual articles...")
 
+    # Instead of just using all docs directly:
+    embeddings = collection.get(include=["embeddings"])["embeddings"]
+    articles = [{"title": m["title"], "source": m["source"], "text": d}
+                for m, d in zip(metas, docs)]
+
+    from app.cluster import cluster_articles
+    clusters = cluster_articles(embeddings, articles)
+
+    # Merge cluster content
+    merged_contexts = []
+    for cluster in clusters:
+        combined_text = "\n\n".join([a["text"] for a in cluster])
+        merged_contexts.append(combined_text)
+
+    context_text = "\n\n---\n\n".join(merged_contexts)
+
     # compressed stories
     summaries = []
     for doc, meta in zip(docs, metas):
@@ -127,7 +143,9 @@ Guidelines:
 - Keep sentences short and natural for speech.
 - Avoid filler words, opinions, or speculation.
 - End with a brief summary or sign-off, no outro music.
-- Aim for about {target_words} words (~{max_minutes} minutes of speech).
+- Aim for a detailed narrative of roughly {target_words} words (~{max_minutes} minutes of speech).
+- Expand each story with 2–3 sentences of context and smooth transitions between segments.
+- When multiple sources mention the same story, merge them into one segment with attribution.
 
 Context (real articles to summarize):
 {context_text}
@@ -141,7 +159,7 @@ Context (real articles to summarize):
             who summarizes important events in a short spoken podcast."""},
             {"role": "user", "content": prompt},
         ],
-        temperature=0.3,
+        temperature=0.2,
     )
 
     script = completion.choices[0].message.content.strip()

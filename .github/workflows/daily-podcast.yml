@@ -1,0 +1,35 @@
+name: Daily Podcast Automation
+
+on:
+  schedule:
+    - cron: "0 12 * * *"  # every day at 7 AM ET
+  workflow_dispatch: 
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run daily podcast pipeline
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          NEWS_FEEDS: ${{ secrets.NEWS_FEEDS }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+          PODCAST_OUTPUT_DIR: "./output"
+          PODCAST_MAX_MINUTES: "10"
+        run: |
+          python main.py
