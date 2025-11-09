@@ -66,6 +66,23 @@ def ingest_articles(limit_per_feed: int = 10) -> int:
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     with open(f"logs/ingest_{today}.json", "w") as f:
         json.dump(articles, f, indent=2)
+    
+    KEYWORDS = ["AI", "artificial intelligence", "machine learning", "technology", "innovation", "US", "America"]
+
+    # keyword filter logic to clear articles irrelevant to our prompt
+    filtered_articles = []
+    for a in articles:
+        text = f"{a['title']} {a['summary']}".lower()
+        if any(k.lower() in text for k in KEYWORDS):
+            filtered_articles.append(a)
+
+    if not filtered_articles:
+        print("No articles matched filter — storing all instead.")
+        filtered_articles = articles
+
+    articles = filtered_articles
+        
+    
     collection.upsert(ids=ids, documents=docs, metadatas=metas)
     
     print(f"Total stored: {len(articles)} articles across {len(NEWS_FEEDS)} feeds.")
