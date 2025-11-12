@@ -2,8 +2,13 @@ name: Daily Podcast Automation
 
 on:
   schedule:
-    - cron: "0 12 * * *"  # every day at 7 AM ET
-  workflow_dispatch: 
+    - cron: "0 12 * * *"  # every day at 7 AM ET (12 UTC)
+  workflow_dispatch:
+    inputs:
+      user:
+        description: "User feed set (default, rohit, etc.)"
+        required: false
+        default: "default"
 
 jobs:
   run-pipeline:
@@ -25,11 +30,10 @@ jobs:
       - name: Run daily podcast pipeline
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          NEWS_FEEDS: ${{ secrets.NEWS_FEEDS }}
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
           RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
           PODCAST_OUTPUT_DIR: "./output"
           PODCAST_MAX_MINUTES: "10"
         run: |
-          python main.py
+          python main.py --user "${{ github.event.inputs.user || 'default' }}"
