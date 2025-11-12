@@ -1,446 +1,344 @@
 {
-  "https://arstechnica.com/gadgets/2025/11/the-mac-calculators-original-design-came-from-letting-steve-jobs-play-with-sliders-for-ten-minutes/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "2917ffb9945fc7d8db9d98aac1b3b87f",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.marktechpost.com/2025/11/11/meta-ai-releases-omnilingual-asr-a-suite-of-open-source-multilingual-speech-recognition-models-for-1600-languages/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "a5143c364c50fe2d33111d3ca1edbf32",
+    "source": "https://www.marktechpost.com/feed/"
   },
-  "https://arstechnica.com/google/2025/11/google-says-new-cloud-based-private-ai-compute-is-just-as-secure-as-local-processing/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "792c1b6121c93cbb05b0d12e5f980f04",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.marktechpost.com/2025/11/10/a-coding-implementation-to-build-and-train-advanced-architectures-with-residual-connections-self-attention-and-adaptive-optimization-using-jax-flax-and-optax/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "239815e675e74a282f92abdb02cb1ed2",
+    "source": "https://www.marktechpost.com/feed/"
   },
-  "https://arstechnica.com/gadgets/2025/11/ryanair-tries-forcing-app-downloads-by-eliminating-paper-boarding-passes/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "f0b4e11efd1bb1dee61ccf9d1f851fca",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.marktechpost.com/2025/11/10/moonshot-ai-releases-kosong-the-llm-abstraction-layer-that-powers-kimi-cli/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "19633bfd5a1ea0e4bd4169d7681c951e",
+    "source": "https://www.marktechpost.com/feed/"
   },
-  "https://arstechnica.com/tech-policy/2025/11/reddit-mod-jailed-for-sharing-movie-sex-scenes-in-rare-moral-rights-verdict/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "de59158923317786fb85a3a8b3a5314c",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.marktechpost.com/2025/11/10/gelato-30b-a3b-a-state-of-the-art-grounding-model-for-gui-computer-use-tasks-surpassing-computer-grounding-models-like-gta1-32b/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "92afb0c2d3e685e027e100fda6ac382c",
+    "source": "https://www.marktechpost.com/feed/"
   },
-  "https://arstechnica.com/tech-policy/2025/11/us-states-could-lose-21-billion-of-broadband-grants-after-trump-overhaul/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "c1119e34427aeb7dd58b7b90f48760eb",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/story/nike-hyperboots-deal-1125/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "0adcdc25159618da6828711845cefa0b",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/google/2025/11/googles-nano-banana-ai-image-editing-is-finally-coming-to-google-photos/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "75efdbbeb77b762ae3ecd639d4636126",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/story/best-tv-shows-hulu-this-week/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "dabccad289c908884a9af8039397b4a6",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/tech-policy/2025/11/lawyers-keep-giving-weak-sauce-excuses-for-fake-ai-citations-in-court-docs/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "e0ccccc0ae372fafb84b6e04a60a746a",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/story/the-running-man-conjures-a-dystopian-vision-of-america-thats-still-not-as-bad-as-reality/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "e83ee8fa369ea71338c6112d076fcc2c",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/cars/2025/11/tires-that-talk-to-your-town-about-the-state-of-roads-are-on-the-way/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "3ab5ce4cb8e8b6bcf436d67e8db09b11",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/story/beats-pill-deal-1125/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "9332577f95ebcca5aaefdfd2ba750535",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/security/2025/11/clickfix-may-be-the-biggest-security-threat-your-family-has-never-heard-of/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "11d2cdcf2c7cfbdf9fd1c8cff55f99d5",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/story/doge-whistleblower-chuck-borges-running-for-political-office/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "083a25303fe6cb67e39d4edd703e4b08",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/space/2025/11/neutron-rockets-debut-slips-into-mid-2026-as-company-seeks-success-from-the-start/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "00dc523ae413d734081f617013ae6157",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/gallery/gifts-for-cat-lovers/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "dd572eb400ba449f794b8e25ebb9ef3d",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/space/2025/11/intuitive-machines-known-for-its-moon-landers-will-become-a-military-contractor/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "f6d02b2897670a271788f3a0aca9445a",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/gallery/best-ergonomic-mouse/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "f9aa9e8d23dfb5f29349d5f72a6ac97a",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/ai/2025/11/study-finds-ai-models-store-memories-and-logic-in-different-neural-regions/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "23eea26207e3680bb1021defd6f9315a",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/gallery/best-hiking-boots/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "89f31e2951f7148394979bf4d63baf7e",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/health/2025/11/canada-fought-measles-and-measles-won-virus-now-endemic-after-1998-elimination/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "8cd0e8107d97d38900d598178da46a71",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/story/gifts-for-book-lovers/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "9e532711afa1cd9e8545131c2d4699c8",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/apple/2025/11/apple-has-no-plans-to-bring-ads-to-apple-tv/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "476fdd047fe577cf67d9de559458e067",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/review/tractive-smart-cat-tracker/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "9240226c3567ca7d369b3a08d4681d85",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/gaming/2025/11/new-project-brings-strong-linux-compatibility-to-more-classic-windows-games/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "cfc2d6b136a82794c1da85621096c1d3",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/story/booze-without-the-burn-voodoo-scientific-viriato/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "9c96fa3d77088daf41272a107e1aa299",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/science/2025/11/runaway-black-hole-mergers-may-have-built-supermassive-black-holes/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "302e049c6b24311638d72e036a5bdfaa",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/story/should-you-get-permanent-outdoor-lights/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "894ae03d83677f30d96f106c65b3198d",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/culture/2025/11/the-running-mans-final-trailer-amps-up-the-high-octane-action/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "5e1e13bc2fa7af0d27a246f206aad853",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/story/the-big-interview-podcast-steven-adler-openai-erotica/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "7002251b08c3b51e56d8e00e1eb714a5",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://arstechnica.com/cars/2025/11/f1-in-brazil-thats-what-generational-talent-looks-like/": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "148b37e2e44aea478db156a2828abf56",
-    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  "https://www.wired.com/story/target-promo-code/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "a379229dc442f22c0133a28e0fdfb965",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://www.bbc.com/news/articles/cly4wxnxxj2o?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "b328d6d2697624fcc0e529c6ebd278cb",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
+  "https://www.wired.com/story/1password-coupon/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "8114f861dd58d6cb3e633419107585b4",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://www.bbc.com/news/articles/cj0egyzm5yjo?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "ebe257b9ee4ce2ba8d3d4bb15bbd1aa3",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
+  "https://www.wired.com/story/bh-photo-coupon/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "6611d5ef8f68d8477f0902ebef3ba151",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://www.bbc.com/news/articles/cdegj3g6gg3o?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "ffe11b9ba8ce722824addacd595ce0b5",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
+  "https://www.wired.com/story/vimeo-promo-code/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "5bd1e447630e1bbff670fc562619e669",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://www.bbc.com/news/articles/cdxydpr1zz2o?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "2ee5a9ff149755689116fd2485e70104",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
+  "https://www.wired.com/story/vitamix-promo-code/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "bf30dee445adacd9ef72e43925628dba",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://www.bbc.com/news/videos/c397yprxm4yo?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "131d514b8306ffe195f092e6d7605ae1",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
+  "https://www.wired.com/story/oneplus-promo-code/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "5fad4ff4d0b9edfc86da3ca809f925a9",
+    "source": "https://www.wired.com/feed/rss"
   },
-  "https://www.bbc.com/news/articles/c4gw001kw97o?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "7cb990c5c7c9e88d9d73a7f2284bbadb",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.bbc.com/news/articles/cy7e2lv4r8xo?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "019caa63ff6696c0178312bdaf308e54",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.bbc.com/news/articles/cvgvz6316zwo?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "8c4238973cb0bf55aafce6a39396a6a6",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.bbc.com/news/articles/crrj1znp0pyo?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "1b2403d939fcfb6412a1a7b4a4d5f830",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.bbc.com/news/articles/cj41pgpk0wgo?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "43de68cbcad5f378efb2b450b44bf22f",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.bbc.com/news/articles/c0jdyw24782o?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "9edf15962cf4865db43debc94cea4b4e",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.bbc.com/news/articles/cg51381pnyqo?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "e2098f33e85200dce8d1d8109f03a4e5",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.bbc.com/news/articles/c1m321r73g4o?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "45746de4d6a0aeb0d85848503220b986",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.bbc.com/news/articles/cx2y1z70lwlo?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "a808d9ea27a4ac61ef6c3e00695aa831",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.bbc.com/news/videos/cddrp1d8djyo?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "9a1f7d98dfddf073fc905ec8a80d5c72",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.bbc.com/news/videos/cp8ep487257o?at_medium=RSS&at_campaign=rss": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "73c5b01a6d10e2821204ab453b1b34c0",
-    "source": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml"
-  },
-  "https://www.npr.org/2025/11/11/nx-s1-5605538/air-traffic-control-flights-controllers-government-shutdown": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "5cf199571b971551f8e6e050098c788b",
-    "source": "https://feeds.npr.org/1001/rss.xml"
-  },
-  "https://www.npr.org/2025/11/11/g-s1-97516/supreme-court-snap-payments-shutdown": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "afef32502d94c03e4ec6d59878033cd7",
-    "source": "https://feeds.npr.org/1001/rss.xml"
-  },
-  "https://www.npr.org/2025/11/11/nx-s1-5605983/bros-really-are-dominating-podcasting": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "d22d6a189dc9c68b707e897ceb3a6d87",
-    "source": "https://feeds.npr.org/1001/rss.xml"
-  },
-  "https://www.npr.org/2025/11/11/nx-s1-5596107/ive-had-it-podcast-democrats-mamdani": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "b5614114a0e345259c8161410adedb1e",
-    "source": "https://feeds.npr.org/1001/rss.xml"
-  },
-  "https://www.npr.org/2025/11/11/nx-s1-5604385/museums-attendance-donations-grants-trump": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "6075f862db9d0c8f3d208cd1c9ef71dd",
-    "source": "https://feeds.npr.org/1001/rss.xml"
-  },
-  "https://www.npr.org/2025/11/11/nx-s1-5601771/marion-nestle-food-policy-what-to-eat-now": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "f54a361cb35d80f7875c2e6fcd299b30",
-    "source": "https://feeds.npr.org/1001/rss.xml"
-  },
-  "https://www.npr.org/2025/11/11/nx-s1-5462829/mail-ballot-grace-period-supreme-court": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "a3879d3daf4344637902ff4b945253fe",
-    "source": "https://feeds.npr.org/1001/rss.xml"
-  },
-  "https://www.npr.org/sections/goats-and-soda/2025/11/11/g-s1-97230/vaccines-pandemic-preparedness-covid-seth-berkley-fair-doses": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "6c5ce273f0d34550368ab7632e1d2abf",
-    "source": "https://feeds.npr.org/1001/rss.xml"
-  },
-  "https://www.npr.org/2025/11/11/nx-s1-5598444/nuremberg-movie-review-2025-russell-crowe-rami-malek": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "81d1c40685de8e0ba6c13d6a933e90d2",
-    "source": "https://feeds.npr.org/1001/rss.xml"
-  },
-  "https://www.npr.org/2025/11/11/g-s1-97364/up-first-newsletter-house-returns-government-shutdown-cop30": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "803fef05fa01e6bd290344f0dc7ce309",
-    "source": "https://feeds.npr.org/1001/rss.xml"
+  "https://www.wired.com/story/jbl-charge-6-deal-1125/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "82af81416d63c1a11d3cde987b669b40",
+    "source": "https://www.wired.com/feed/rss"
   },
   "https://www.theverge.com/news/818542/disney-youtube-tv-blackout-cost": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
     "hash": "1024de178dd6a60c5245fc69a8cb65f6",
     "source": "https://www.theverge.com/rss/index.xml"
   },
   "https://www.theverge.com/tech/817644/pixel-update-notification-summaries-image-remix-messages": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
     "hash": "df18491f0e37a187620da1fd36451c6f",
     "source": "https://www.theverge.com/rss/index.xml"
   },
   "https://www.theverge.com/news/818364/google-private-ai-compute": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
     "hash": "fd661c78f613aa131923daf0c615280e",
     "source": "https://www.theverge.com/rss/index.xml"
   },
   "https://www.theverge.com/news/818508/chatbot-eating-disorder-mental-health": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
     "hash": "78357fc8d4f041b1ba37074c56f6b758",
     "source": "https://www.theverge.com/rss/index.xml"
   },
   "https://www.theverge.com/gadgets/818102/amazon-kindle-paperwhite-signature-edition-lego-christmas-tree-deal-sale": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
     "hash": "b3ebde7361e53da88883cf51f96ab90d",
     "source": "https://www.theverge.com/rss/index.xml"
   },
   "https://www.theverge.com/news/818346/google-photos-ios-help-me-edit-update": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
     "hash": "e3e6d98f302560986555112a505177ec",
     "source": "https://www.theverge.com/rss/index.xml"
   },
   "https://www.theverge.com/news/818470/elevenlabs-iconic-voice-marketplace-ai-audio": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
     "hash": "78e24b7d723ad8794b3bc5d5616c2cdc",
     "source": "https://www.theverge.com/rss/index.xml"
   },
   "https://www.theverge.com/gadgets/802964/best-mom-gift-ideas": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
     "hash": "c60c0df5237e5ec6814a1b6c19462ed8",
     "source": "https://www.theverge.com/rss/index.xml"
   },
   "https://www.theverge.com/tech/817807/lg-g5-oled-tv-review": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
     "hash": "fb059d37dd24fd2b0033aa2d69c65367",
     "source": "https://www.theverge.com/rss/index.xml"
   },
   "https://www.theverge.com/news/818405/sandisk-1tb-extreme-fit-usb-c-ssd": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
     "hash": "d2905ff448ca974e99d081b1d00d6cb8",
     "source": "https://www.theverge.com/rss/index.xml"
   },
-  "https://www.nytimes.com/2025/11/11/us/politics/adelita-grijalva-swearing-in-congress.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "d3465d29c8a6e7136e38aac8bf3a2c06",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://venturebeat.com/ai/baidu-just-dropped-an-open-source-multimodal-ai-that-it-claims-beats-gpt-5": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "dc9565e6cdf4ff280d9368f5a3b1f817",
+    "source": "https://venturebeat.com/category/ai/feed/"
   },
-  "https://www.nytimes.com/2025/11/11/us/politics/snap-food-stamps-supreme-court-trump.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "59d9051ffe1c0613a5cbb05e6718185a",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://venturebeat.com/ai/metas-spice-framework-lets-ai-systems-teach-themselves-to-reason": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "6fd53457b6a57b0f6d37285e61cec687",
+    "source": "https://venturebeat.com/category/ai/feed/"
   },
-  "https://www.nytimes.com/2025/11/11/us/flights-canceled-shutdown.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "9d3b5887ecff81f550f86348322531f0",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://venturebeat.com/ai/only-9-of-developers-think-ai-code-can-be-used-without-human-oversight": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "dbfac0a1ea6bfc76608a146491be83bc",
+    "source": "https://venturebeat.com/category/ai/feed/"
   },
-  "https://www.nytimes.com/2025/11/11/us/trump-administration-plans-to-send-border-patrol-to-charlotte-and-new-orleans.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "bfb41bdf9960a846175349cba4e3d36a",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://venturebeat.com/ai/meta-returns-to-open-source-ai-with-omnilingual-asr-models-that-can": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "f03a8a287b0e4b8f8b5befad3fc3b7c6",
+    "source": "https://venturebeat.com/category/ai/feed/"
   },
-  "https://www.nytimes.com/2025/11/11/us/politics/marco-rubio-equatorial-guinea.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "2a976a2c087bd41143c3f5c6a75a232c",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://venturebeat.com/ai/chronosphere-takes-on-datadog-with-ai-that-explains-itself-not-just-outages": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "8c575874791f0d51983e5b6f386e1c52",
+    "source": "https://venturebeat.com/category/ai/feed/"
   },
-  "https://www.nytimes.com/2025/11/11/us/justice-department-to-investigate-protests-at-turning-point-event-at-berkeley.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "28f405f9e24912a9f38ffb84eece6035",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/gadgets/2025/11/the-mac-calculators-original-design-came-from-letting-steve-jobs-play-with-sliders-for-ten-minutes/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "2917ffb9945fc7d8db9d98aac1b3b87f",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/11/us/politics/democrats-shutdown.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "7b2f0c4a199750b5ba13aaf53b9647f1",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/google/2025/11/google-says-new-cloud-based-private-ai-compute-is-just-as-secure-as-local-processing/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "792c1b6121c93cbb05b0d12e5f980f04",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/11/us/politics/trump-veterans-day-speech-shutdown.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "34d78d448774af4a8db8ddb88be4a343",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/gadgets/2025/11/ryanair-tries-forcing-app-downloads-by-eliminating-paper-boarding-passes/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "f0b4e11efd1bb1dee61ccf9d1f851fca",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/11/us/politics/trump-shutdown-health-care-costs-aca.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "e5aa94fab8e398a2685e694b19753323",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/tech-policy/2025/11/reddit-mod-jailed-for-sharing-movie-sex-scenes-in-rare-moral-rights-verdict/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "de59158923317786fb85a3a8b3a5314c",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/11/us/bishops-coakley-immigration.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "e382a1752aaff1ce80a74146319974ff",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/tech-policy/2025/11/us-states-could-lose-21-billion-of-broadband-grants-after-trump-overhaul/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "c1119e34427aeb7dd58b7b90f48760eb",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/11/us/politics/aircraft-carrier-moves-into-the-caribbean-as-us-confronts-venezuela.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "da8a6c1d61c54c54c728e1f9fbdb74c1",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/google/2025/11/googles-nano-banana-ai-image-editing-is-finally-coming-to-google-photos/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "75efdbbeb77b762ae3ecd639d4636126",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/11/us/kansas-redistricting-sharice-davids-congress.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "93b0a6e7943ee8d3d65c70baadea1fd0",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/tech-policy/2025/11/lawyers-keep-giving-weak-sauce-excuses-for-fake-ai-citations-in-court-docs/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "e0ccccc0ae372fafb84b6e04a60a746a",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/11/us/politics/panama-noriega-maduro.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "19c1ecb0cc09cf9bed61b10d781d8c8f",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/cars/2025/11/tires-that-talk-to-your-town-about-the-state-of-roads-are-on-the-way/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "3ab5ce4cb8e8b6bcf436d67e8db09b11",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/11/us/utah-redistricting-gerrymander-congress.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "fa0e234887138eb6fc549de9b554911a",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/security/2025/11/clickfix-may-be-the-biggest-security-threat-your-family-has-never-heard-of/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "11d2cdcf2c7cfbdf9fd1c8cff55f99d5",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/11/us/car-chase-police-mexico-la.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "1af4ccbdb6a2d32a8dca920121019072",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/space/2025/11/neutron-rockets-debut-slips-into-mid-2026-as-company-seeks-success-from-the-start/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "00dc523ae413d734081f617013ae6157",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/11/us/mamdani-nyc-voters-election-demographics.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "2609592f8bc63936e811495300fce738",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/space/2025/11/intuitive-machines-known-for-its-moon-landers-will-become-a-military-contractor/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "f6d02b2897670a271788f3a0aca9445a",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/10/us/politics/kennan-institute-doge-trump.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "61d03a5abd707d737f8a7c05d89fe26a",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/ai/2025/11/study-finds-ai-models-store-memories-and-logic-in-different-neural-regions/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "23eea26207e3680bb1021defd6f9315a",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/10/us/politics/trump-government-shutdown.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "afe6d3f81a579ae112cf5b4c1c7ae0b3",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/health/2025/11/canada-fought-measles-and-measles-won-virus-now-endemic-after-1998-elimination/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "8cd0e8107d97d38900d598178da46a71",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/10/us/politics/shutdown-deal-revives-democratic-infighting.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "31ada54effaa7caf7d30e6d133d8ebc5",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/apple/2025/11/apple-has-no-plans-to-bring-ads-to-apple-tv/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "476fdd047fe577cf67d9de559458e067",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   },
-  "https://www.nytimes.com/2025/11/10/us/politics/trump-supreme-court-e-jean-carroll.html": {
-    "first_seen": "2025-11-12T02:33:57.650482",
-    "last_seen": "2025-11-12T02:33:57.650482",
-    "hash": "aa78f744ebd4e353ff7c5d1724ad5b70",
-    "source": "https://rss.nytimes.com/services/xml/rss/nyt/US.xml"
+  "https://arstechnica.com/gaming/2025/11/new-project-brings-strong-linux-compatibility-to-more-classic-windows-games/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "cfc2d6b136a82794c1da85621096c1d3",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  },
+  "https://arstechnica.com/science/2025/11/runaway-black-hole-mergers-may-have-built-supermassive-black-holes/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "302e049c6b24311638d72e036a5bdfaa",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  },
+  "https://arstechnica.com/culture/2025/11/the-running-mans-final-trailer-amps-up-the-high-octane-action/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "5e1e13bc2fa7af0d27a246f206aad853",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
+  },
+  "https://arstechnica.com/cars/2025/11/f1-in-brazil-thats-what-generational-talent-looks-like/": {
+    "first_seen": "2025-11-12T03:24:24.789416",
+    "last_seen": "2025-11-12T03:24:24.789416",
+    "hash": "148b37e2e44aea478db156a2828abf56",
+    "source": "https://feeds.arstechnica.com/arstechnica/index"
   }
 }

@@ -25,14 +25,22 @@ embed_fn = embedding_functions.OpenAIEmbeddingFunction(
 )
 
 # we remove yesterday's news articles
-if "news_articles" in [c.name for c in chroma_client.list_collections()]:
-    chroma_client.delete_collection("news_articles")
+# if "news_articles" in [c.name for c in chroma_client.list_collections()]:
+#     chroma_client.delete_collection("news_articles")
 
 # then create a new one for today
-collection = chroma_client.create_collection(
-    name="news_articles",
-    embedding_function=embed_fn,
-)
+# get existing collection or create one if missing
+if "news_articles" in [c.name for c in chroma_client.list_collections()]:
+    collection = chroma_client.get_collection(
+        name="news_articles",
+        embedding_function=embed_fn,
+    )
+else:
+    collection = chroma_client.create_collection(
+        name="news_articles",
+        embedding_function=embed_fn,
+    )
+
 def load_seen_articles() -> dict:
     """Load the JSON file tracking previously seen articles."""
     SEEN_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -81,7 +89,6 @@ def ingest_articles(limit_per_feed = 20, user="default") -> int:
     new_articles = []
     now = datetime.utcnow()
     feeds = load_feeds(user)
-    articles = []
     for url in feeds:
         url = url.strip()
         if not url:
@@ -116,14 +123,13 @@ def ingest_articles(limit_per_feed = 20, user="default") -> int:
                 continue
 
             # 3) This is a "new enough" or updated article → keep it
-            new_articles.append(
-                {
-                    "title": title,
-                    "summary": summary,
-                    "link": link,
-                    "source": url,
-                }
-            )
+            article = {
+                "title": title,
+                "summary": summary,
+                "link": link,
+                "source": url,
+            }
+            new_articles.append(article)
 
             # 4) Update seen map
             record = seen.get(link, {})
@@ -135,22 +141,14 @@ def ingest_articles(limit_per_feed = 20, user="default") -> int:
             seen[link] = record
 
 
-    if not articles:
-        print("No new articles after dedup/filtering.")
-        save_seen_articles(seen)
-        return 0
-
     # Persist updated seen map
     save_seen_articles(seen)
+    print(f"Seen map contains {len(seen)} entries")
+
 
     if not new_articles:
         print("No new articles after dedup/filtering.")
         return 0
-
-    ids = [a["link"] for a in new_articles]
-    docs = [f"{a['title']}\n\n{a['summary']}" for a in new_articles]
-    metas = [{"title": a["title"], "link": a["link"], "source": a["source"]} for a in new_articles]
-
 
     # insert if not existing or replace if it does
     os.makedirs("logs", exist_ok=True)
@@ -162,16 +160,20 @@ def ingest_articles(limit_per_feed = 20, user="default") -> int:
 
     # keyword filter logic to clear articles irrelevant to our prompt
     filtered_articles = []
-    for a in articles:
+    for a in new_articles:
         text = f"{a['title']} {a['summary']}".lower()
         if any(k.lower() in text for k in KEYWORDS):
             filtered_articles.append(a)
 
     if not filtered_articles:
         print("No articles matched filter — storing all instead.")
-        filtered_articles = articles
+        filtered_articles = new_articles
 
     articles = filtered_articles
+
+    ids = [a["link"] for a in articles]
+    docs = [f"{a['title']}\n\n{a['summary']}" for a in articles]
+    metas = [{"title": a["title"], "link": a["link"], "source": a["source"]} for a in articles]
         
     
     collection.upsert(ids=ids, documents=docs, metadatas=metas)

@@ -26,15 +26,18 @@ def main(user="default"):
     print(f"→ Ingested {article_count} articles.\n")
 
     if article_count == 0:
-        print("No articles found. Aborting.")
-        return
+        print("No new articles — switching to recap mode.\n")
+        recap = True
+    else:
+        recap = False
+
 
     print("Step 2: Generating podcast script...")
-    script = generate_podcast_script(max_minutes=5)
+    script = generate_podcast_script(max_minutes=10, recap=recap)
     print("→ Script generated successfully.\n")
 
     print("Step 3: Generating audio file...")
-    file_path = text_to_speech(script)  # capture the returned path
+    file_path = text_to_speech(script, user) # capture the returned path
 
     print("Step 4: Sending email...")
     send_email(file_path, subject=f"{user.title()}'s Daily News Podcast")
