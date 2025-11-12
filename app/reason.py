@@ -39,11 +39,27 @@ def summarize_article(title, content):
     return response.choices[0].message.content.strip()
 
 
-def generate_podcast_script(max_minutes: int = 5, topic: str = "general"):
+def generate_podcast_script(
+    max_minutes: int = 5,
+    topic: str = "general",
+    recap: bool = False,
+    style: str = "conversational",
+    user: str = "default"
+):
+
     """Query the vector DB for today's articles and create a spoken script."""
 
-    # chroma searches using semantic phrases so we can just speak to it what we want basically
-    query = f"Top {topic} news from the last day, including major national and AI tech stories if relevant."
+    if collection.count() == 0:
+        print("[REASON] No data in collection — returning empty script.")
+        return "No news available today."
+
+    # Determine query and mode
+    if recap:
+        query = f"Important {topic} news from the past few days for a recap episode."
+        mode_text = "No major updates today — create a recap summarizing recent ongoing stories."
+    else:
+        query = f"Top {topic} news from the last 24 hours."
+        mode_text = "Generate a fresh daily episode summarizing today's main events."
 
     print("Step 2: Querying Chroma...")
     result = collection.query(query_texts=[query], n_results=30)
@@ -118,37 +134,52 @@ def generate_podcast_script(max_minutes: int = 5, topic: str = "general"):
         combined_text = "\n\n".join([a["text"] for a in cluster])
         merged_contexts.append(combined_text)
 
-    context_text = "\n\n---\n\n".join(merged_contexts)
-
     # compressed stories
-    summaries = []
-    for doc, meta in zip(docs, metas):
-        summary = summarize_article(meta['title'], doc)
-        summaries.append(f"{meta['title']}: {summary}")
+    print(f"[REASON] Summarizing {len(docs)} articles in batch...")
 
-    context_text = "\n\n".join(summaries)
+    titles_and_bodies = "\n\n".join(
+        [f"Title: {m['title']}\n\n{d}" for m, d in zip(metas, docs)]
+    )
 
-    
-    context_text = "\n\n---\n\n".join(context_blocks)
+    batch_prompt = f"""
+    Summarize each of the following articles in 2–3 sentences.
+    Return them numbered (1., 2., 3., etc.), one per line.
+    Be factual and concise, focusing on the key developments only.
+
+    {titles_and_bodies}
+    """
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "system", "content": "You are a concise and accurate news summarizer."},
+            {"role": "user", "content": batch_prompt},
+        ],
+        temperature=0.2,
+    )
+
+    context_text = response.choices[0].message.content.strip()
+    print("[REASON] Batch summarization complete.")
     target_words = max_minutes * 130  # we want it to speak slow enough (around 130 words per minute) that we can understand but also we can 2x speed it
 
     prompt = f"""
 You are writing a spoken news script for a short AI-generated podcast. 
-
+{mode_text}
 Guidelines:
-- Focus only on major United States news and technology stories.
+- Focus on {topic} topics, major U.S. and technology stories.
+- Tone: {style}.
 - Be factual, clear, and conversational — as if a calm professional narrator is speaking.
 - Do NOT include sound cues, stage directions, or brackets like [music] or [transition].
 - Use smooth verbal transitions instead of sound effects (e.g., “Moving on to our next story…”).
 - Keep sentences short and natural for speech.
 - Avoid filler words, opinions, or speculation.
+- If only a few new stories exist, include quick updates followed by a recap of recent key events.
 - End with a brief summary or sign-off, no outro music.
 - Aim for a detailed narrative of roughly {target_words} words (~{max_minutes} minutes of speech).
-- Expand each story with 2–3 sentences of context and smooth transitions between segments.
+- Expand each story with 2-3 sentences of context and smooth transitions between segments.
 - When multiple sources mention the same story, merge them into one segment with attribution.
 
 Context (real articles to summarize):
-{context_text}
 {context_text}
 """
     # call the LLM with our prompt, low temperature because we want more accurate info and dont care as much about diversity 
@@ -163,6 +194,16 @@ Context (real articles to summarize):
     )
 
     script = completion.choices[0].message.content.strip()
+    if recap:
+        script = (
+            "Good day. There are no major new updates, "
+            "so here’s a recap of the key stories from the last few days.\n\n"
+            + script
+        )
+    else:
+        script = "Here are today’s top stories.\n\n" + script
+        
+    print(f"[REASON] Generated podcast script ({len(script.split())} words)")
     return script
 
 if __name__ == "__main__":

@@ -1,0 +1,20 @@
+{
+  "general": [
+    "https://rss.nytimes.com/services/xml/rss/nyt/US.xml",
+    "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
+    "https://feeds.npr.org/1001/rss.xml",
+    "https://feeds.arstechnica.com/arstechnica/index",
+    "https://www.theverge.com/rss/index.xml"
+  ],
+  "technology": [
+    "https://www.theverge.com/rss/index.xml",
+    "https://www.wired.com/feed/rss",
+    "https://feeds.arstechnica.com/arstechnica/index"
+  ],
+  "ai": [
+    "https://www.marktechpost.com/feed/",
+    "https://www.syncedreview.com/feed/",
+    "https://venturebeat.com/category/ai/feed/",
+    "https://techcrunch.com/tag/artificial-intelligence/feed/"
+  ]
+}
